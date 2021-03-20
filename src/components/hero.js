@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './button'
 
 
 export default ({ data }) => (
@@ -12,9 +13,9 @@ export default ({ data }) => (
       className={`inline-block align-middle text-white`}
     >
       <div
-        className={`text-7xl font-bold`}
+        className={`text-7xl font-bold mb-8`}
       >{data.headline}</div>
-      <p><a href={data.url}>Join our Sisterhood</a></p>
+      <Button data={data}>Join our Sisterhood</Button>
     </div>
   </div>
 )

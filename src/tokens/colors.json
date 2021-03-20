@@ -3,10 +3,14 @@
   "current": "currentColor",
   "black": "#000",
   "white": "#FFF",
-  "pink": "#F2B9CC",
+  "pink": {
+    "500": "#F2B9CC",
+    "600": "#E2638D"
+  },
   "green": {
     "300": "#E1DC6B",
-    "500": "#A1AE25"
+    "500": "#A1AE25",
+    "600": "#7A841C"
   },
   "brown": {
     "300": "#BB8918",
