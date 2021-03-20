@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from './container'
-import Navigation from './navigation'
+import Header from './header'
 
 class Template extends React.Component {
   render() {
@@ -8,7 +8,7 @@ class Template extends React.Component {
 
     return (
       <Container>
-        <Navigation />
+        <Header />
         {children}
       </Container>
     )
