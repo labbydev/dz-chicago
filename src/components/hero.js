@@ -9,8 +9,8 @@ export default ({ data }) => (
       fluid={data.heroImage.fluid}
     />
     <div>
-      <h3>{data.name}</h3>
-      <p>{data.title}</p>
+      <div>{data.headline}</div>
+      <p><a href={data.url}>Join our Sisterhood</a></p>
     </div>
   </div>
 )

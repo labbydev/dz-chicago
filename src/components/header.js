@@ -1,6 +1,5 @@
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery, Link } from 'gatsby'
 import React from 'react'
-import { Link } from 'gatsby'
 // import Navigation from './navigation'
 
 const Header = () => {
