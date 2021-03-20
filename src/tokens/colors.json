@@ -1,0 +1,15 @@
+{
+  "transparent": "transparent",
+  "current": "currentColor",
+  "black": "#000",
+  "white": "#FFF",
+  "pink": "#F2B9CC",
+  "green": {
+    "300": "#E1DC6B",
+    "500": "#A1AE25"
+  },
+  "brown": {
+    "300": "#BB8918",
+    "500": "#523637"
+  }
+}

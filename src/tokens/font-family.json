@@ -1,0 +1,14 @@
+{
+  "sans": [
+    "poppins",
+    "system-ui",
+    "-apple-system",
+    "BlinkMacSystemFont",
+    "Roboto",
+    "Arial",
+    "sans-serif"
+  ],
+  "display": [
+    "Sevillana"
+  ]
+}
