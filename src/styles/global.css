@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container {
+  @apply w-full mx-auto px-4;
+}
+
+@screen sm {
+  .container {
+    @apply max-w-screen-sm;
+  }
+}
+
+@screen md {
+  .container {
+    @apply max-w-screen-md;
+  }
+}
+
+@screen lg {
+  .container {
+    @apply max-w-screen-lg;
+  }
+}
+
+@screen xl {
+  .container {
+    @apply max-w-screen-xl;
+  }
+}
