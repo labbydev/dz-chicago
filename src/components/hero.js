@@ -1,15 +1,19 @@
 import React from 'react'
-import Img from 'gatsby-image'
 
 
 export default ({ data }) => (
-  <div>
-    <Img
-      alt={data.name}
-      fluid={data.heroImage.fluid}
-    />
-    <div>
-      <div>{data.headline}</div>
+  <div 
+    style={{ 
+      backgroundImage: `url(${data.heroImage.fluid.src})` 
+    }}
+    className={`hero bg-fixed h-not-full bg-center flex justify-center items-center px-4`}
+  >
+    <div
+      className={`inline-block align-middle text-white`}
+    >
+      <div
+        className={`text-7xl font-bold`}
+      >{data.headline}</div>
       <p><a href={data.url}>Join our Sisterhood</a></p>
     </div>
   </div>

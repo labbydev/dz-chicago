@@ -7,6 +7,11 @@ module.exports = {
   theme: {
     colors,
     fontFamily,
+    extend: {
+      height: {
+        'not-full': '80vh'
+      },
+    },
   },
   variants: {
     extend: {},
