@@ -36,9 +36,6 @@ query HomeQuery {
             src
           }
         }
-        body {
-          raw
-        }
       }
     }
   }
