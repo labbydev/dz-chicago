@@ -14,6 +14,11 @@ class RootIndex extends React.Component {
       <Layout location={this.props.location}>
         <Helmet title={siteTitle} />
         <Hero data={group.node} />
+        <div
+          className={`container`}
+        >
+          <h3>puppies</h3>
+        </div>
       </Layout>
     )
   }
@@ -32,7 +37,7 @@ query HomeQuery {
           }
         }
         body {
-          json
+          raw
         }
       }
     }
