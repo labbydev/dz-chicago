@@ -2,6 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
+/**
+ * Custom Base
+ *
+ * Add extra base styles.
+ */
+ @layer base {
+  a {
+    @apply font-bold;
+  }
+
+  a:hover {
+    @apply underline;
+  }
+
+  body {
+    @apply text-base font-sans leading-normal normal-case;
+  }
+
+  p {
+    @apply text-lg font-sans leading-normal normal-case font-extralight;
+  }
+
+  hr {
+    @apply border-brown-500;
+  }
+
+  h1 {
+    @apply text-4xl leading-snug tracking-wide;
+  }
+
+  h2 {
+    @apply text-3xl leading-normal tracking-wide;
+  }
+
+  h3 {
+    @apply text-2xl leading-normal;
+  }
+
+  h4 {
+    @apply text-xl leading-normal;
+  }
+
+  h5 {
+    @apply text-lg leading-normal;
+  }
+
+  h6 {
+    @apply text-base leading-normal;
+  }
+
+  b,
+  strong {
+    @apply font-bold;
+  }
+
+  em {
+    @apply italic;
+  }
+}
+
 .container {
   @apply w-full mx-auto px-4;
 }
@@ -15,17 +75,5 @@
 @screen md {
   .container {
     @apply max-w-screen-md;
-  }
-}
-
-@screen lg {
-  .container {
-    @apply max-w-screen-lg;
-  }
-}
-
-@screen xl {
-  .container {
-    @apply max-w-screen-xl;
   }
 }

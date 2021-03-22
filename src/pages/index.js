@@ -2,8 +2,10 @@ import React from 'react'
 import get from 'lodash/get'
 import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
+import { renderRichText } from 'gatsby-source-contentful/rich-text'
 import Layout from '../components/layout'
 import Hero from '../components/hero'
+import SectionBand from '../components/section-band'
 
 class RootIndex extends React.Component {
   render() {
@@ -14,11 +16,12 @@ class RootIndex extends React.Component {
       <Layout location={this.props.location}>
         <Helmet title={siteTitle} />
         <Hero data={group.node} />
-        <div
-          className={`container`}
+        <SectionBand
+          bkgColor="pink"
+          id="about"
         >
-          <h3>puppies</h3>
-        </div>
+          {group.node && renderRichText(group.node.body)}
+        </SectionBand>
       </Layout>
     )
   }
@@ -31,6 +34,9 @@ query HomeQuery {
       node {
         headline
         url
+        body {
+          raw
+        }
         heroImage: image {
           fluid(maxWidth: 1850) {
             src

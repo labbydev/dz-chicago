@@ -1,5 +1,7 @@
 import React from 'react'
 
 export default ({ children }) => (
-  <div>{children}</div>
+  <div
+    className={`container`}
+  >{children}</div>
 )
