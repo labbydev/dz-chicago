@@ -11,7 +11,7 @@ export default ({ children, bkgColor, id }) => (
   <div
     className={`
       ${bkgColors[bkgColor]}
-      py-10
+      py-10 overflow-hidden
     `}
   >
     <a id="${id}"></a>
