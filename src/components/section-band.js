@@ -2,7 +2,7 @@ import React from 'react'
 import Container from './container'
 
 const bkgColors = {
-  brown: `bg-brown-300`,
+  brown: `bg-brown-500 text-white`,
   green: `bg-green-300`,
   pink: `bg-pink-500 text-white`,
 }

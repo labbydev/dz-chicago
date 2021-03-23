@@ -5,6 +5,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Hero from '../components/hero'
 import SectionBand from '../components/section-band'
+import Groups from '../components/groups'
 import { renderRichText } from 'gatsby-source-contentful/rich-text'
 import { BLOCKS } from "@contentful/rich-text-types"
 
@@ -34,6 +35,12 @@ class RootIndex extends React.Component {
           id="about"
         >
           {group.node && renderRichText(group.node.body, options)}
+        </SectionBand>
+        <SectionBand
+          bkgColor="brown"
+          id="clubs"
+        >
+          <Groups />
         </SectionBand>
       </Layout>
     )
