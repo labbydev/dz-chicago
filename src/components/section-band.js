@@ -14,7 +14,7 @@ export default ({ children, bkgColor, id }) => (
       py-10 overflow-hidden
     `}
   >
-    <a id="${id}"></a>
+    <a id={id}></a>
     <Container>
       {children}
     </Container>
