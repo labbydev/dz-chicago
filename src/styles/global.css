@@ -77,3 +77,39 @@
     @apply max-w-screen-md;
   }
 }
+
+/**
+ * Styles for icon links.
+ */
+.icon-link:hover:after,
+.icon-link:focus:after {
+  @apply bg-transparent;
+}
+ 
+.icon-link:hover svg,
+.icon-link:focus svg {
+  @apply stroke-2;
+}
+ 
+.icon-link:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: '';
+  box-sizing: content-box;
+  top: -6px;
+  left: -6px;
+  padding: 6px;
+  box-shadow: 0 0 0 3px #fff;
+  transition: transform 0.2s,opacity 0.2s;
+  transform: scale(0.8);
+  opacity: 0;
+}
+ 
+.icon-link:hover:after,
+.icon-link:focus:after {
+  transform: scale(1);
+  opacity: .5;
+}
+ 

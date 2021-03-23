@@ -1,6 +1,6 @@
 import React from 'react'
-import Container from './container'
 import Header from './header'
+import Footer from './footer'
 
 class Template extends React.Component {
   render() {
@@ -10,6 +10,7 @@ class Template extends React.Component {
       <div>
         <Header />
         {children}
+        <Footer />
       </div>
     )
   }
