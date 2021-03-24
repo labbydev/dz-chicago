@@ -1,7 +1,14 @@
 import React from 'react'
 
-export default ({ children }) => (
+const widths = {
+  wide: `lg:max-w-screen-lg`,
+}
+
+export default ({ children, width }) => (
   <div
-    className={`container`}
+    className={`
+      ${widths[width]}
+      container
+    `}
   >{children}</div>
 )

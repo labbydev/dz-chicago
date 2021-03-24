@@ -12,6 +12,12 @@ const Groups = () => {
               name
               headline
               url
+              image {
+                title
+                resize(width: 360, height: 240) {
+                  src
+                }
+              }
             }
           }
         }
@@ -27,13 +33,20 @@ const Groups = () => {
         Join our Clubs
       </h2>
       <div
-        className={`sm:grid sm:grid-flow-col sm:grid-cols-3 sm:gap-4`}
+        className={`sm:grid sm:grid-flow-col sm:grid-cols-3 sm:gap-8`}
       >
         {data.allContentfulGroup.edges.map(({ node }) => {
           return (
-            <div className={`mb-8 text-center`}>
+            <div className={`mb-8 text-center grid grid-flow-row`}>
+              <img 
+                src={node.image.resize.src} 
+                title={node.image.title}
+                className={`mb-8`}
+              />
               <h3>{node.name}</h3>
-              <p>{node.headline}</p>
+              <p
+                className={`mb-8`}
+              >{node.headline}</p>
               { node.url ? (
                 <Button data={node}>Join {node.name}</Button>
               ) : null}

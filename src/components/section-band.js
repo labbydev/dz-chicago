@@ -4,10 +4,10 @@ import Container from './container'
 const bkgColors = {
   brown: `bg-brown-500 text-white`,
   green: `bg-green-300`,
-  pink: `bg-pink-500 text-white`,
+  pink: `bg-pink-500 text-brown-500`,
 }
 
-export default ({ children, bkgColor, id }) => (
+export default ({ children, bkgColor, id, width, }) => (
   <div
     className={`
       ${bkgColors[bkgColor]}
@@ -15,7 +15,9 @@ export default ({ children, bkgColor, id }) => (
     `}
   >
     <a id={id}></a>
-    <Container>
+    <Container
+      width={width}
+    >
       {children}
     </Container>
   </div>

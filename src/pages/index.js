@@ -39,6 +39,7 @@ class RootIndex extends React.Component {
         <SectionBand
           bkgColor="brown"
           id="clubs"
+          width="wide"
         >
           <Groups />
         </SectionBand>
