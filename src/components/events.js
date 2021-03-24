@@ -36,14 +36,14 @@ const Events = () => {
         {data.allContentfulEvent.edges.map(({ node }) => {
           return (
             <div className={`mb-8`}>
+              <small
+                className={`mb-8 text-brown-300`}
+              >{node.date}</small>
               <h3>
                 <a href={node.url}>
                   {node.title}
                 </a>
               </h3>
-              <small
-                className={`mb-8 text-brown-300`}
-              >{node.date}</small>
             </div>
           )
         })}

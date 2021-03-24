@@ -8,9 +8,6 @@
  * Add extra base styles.
  */
  @layer base {
-  a {
-    @apply font-bold;
-  }
 
   a:hover {
     @apply underline;
@@ -111,5 +108,48 @@
 .icon-link:focus:after {
   transform: scale(1);
   opacity: .5;
+}
+
+/**
+ * Styles for CSS-only hamburger.
+ */
+.menu-toggle {
+  height: 50px;
+  width: 40px;
+}
+
+ .hamburger {
+  font-size: 0px;
+  height: 4px;
+  margin-top: -2px;
+  top: 50%;
+  transition: background-color 0.3s;
+}
+
+.hamburger:before,
+.hamburger:after {
+  @apply bg-white h-full w-full absolute left-0 shadow-none;
+  content: '';
+  transition: transform 0.3s;
+}
+
+.hamburger:before {
+  transform: translateY(-250%);
+}
+
+.hamburger:after {
+  transform: translateY(250%);
+}
+
+.hamburger.is-open {
+  @apply bg-transparent;
+}
+
+.hamburger.is-open:before {
+  transform: translateY(0) rotate(45deg);
+}
+
+.hamburger.is-open:after {
+  transform: translateY(0) rotate(-45deg);
 }
  

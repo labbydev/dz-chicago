@@ -16,9 +16,9 @@ const Header = () => {
   )
 
   return (
-    <div className={`fixed w-full text-white z-10 bg-gradient-to-b from-black to-transparent`}>
+    <div className={`text-white bg-pink-500`}>
       <div
-        className={`container text-center py-8`}
+        className={`container py-4 flex items-center justify-between`}
       >
         <h1
           className={`text-display text-3xl`}
