@@ -6,6 +6,7 @@ import Layout from '../components/layout'
 import Hero from '../components/hero'
 import SectionBand from '../components/section-band'
 import Groups from '../components/groups'
+import Events from '../components/events'
 import { renderRichText } from 'gatsby-source-contentful/rich-text'
 import { BLOCKS } from "@contentful/rich-text-types"
 
@@ -42,6 +43,13 @@ class RootIndex extends React.Component {
           width="wide"
         >
           <Groups />
+        </SectionBand>
+        <SectionBand
+          bkgColor="green"
+          id="events"
+          width="wide"
+        >
+          <Events />
         </SectionBand>
       </Layout>
     )
