@@ -6,14 +6,25 @@ on:
       - main
 
 jobs:
-  build:
-    runs-on: ubuntu-latest 
+  build-and-deploy:
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1 
-      - name: Publish Gatsby Site supporting Contentful
-        uses: xmflsct/action-publish-gatsby-contentful@v1.1.0
+      - name: Checkout
+        uses: actions/checkout@v2.3.1 
         with:
-          publishBranch: 'main' 
-          token: ${{ secrets.NAME }} # Your personal access token of GitHub, read more below of how to obtain one and keep it safe
-          contentfulSpace: ${{ secrets.CONTENTFUL_SPACE_ID }} # Your Space ID in Contentful
-          contentfulToken: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }} # Your access token of Contentful
+          persist-credentials: false
+
+      - name: Install and Build 
+        run: |
+          npm install
+          npm run build
+        env:
+            CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+            CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages 
+          FOLDER: public 
+          CLEAN: true 
