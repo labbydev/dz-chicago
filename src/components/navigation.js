@@ -12,16 +12,24 @@ export default () => (
         className={`uppercase tracking-wider text-xl font-light mt-4 container`}
         aria-label={`Primary`}
       >
-        <li>
+        <li
+          className={`mb-2`}
+        >
           <Link to="/">Home</Link>
         </li>
-        <li>
+        <li
+          className={`mb-2`}
+        >
           <Link to="/#about">About</Link>
         </li>
-        <li>
+        <li
+          className={`mb-2`}
+        >
           <Link to="/#clubs">Clubs</Link>
         </li>
-        <li>
+        <li
+          className={`mb-2`}
+        >
           <Link to="/#events">Events</Link>
         </li>
       </ul>
