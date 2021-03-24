@@ -10,7 +10,8 @@ jobs:
     runs-on: ubuntu-latest 
     steps:
       - uses: actions/checkout@v1 
-      - uses: xmflsct/action-publish-gatsby@v1 
+      - name: Publish Gatsby Site supporting Contentful
+        uses: xmflsct/action-publish-gatsby-contentful@v1.1.0
         with:
           publishBranch: 'main' 
           token: ${{ secrets.NAME }} # Your personal access token of GitHub, read more below of how to obtain one and keep it safe
