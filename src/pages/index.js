@@ -34,6 +34,7 @@ class RootIndex extends React.Component {
         <SectionBand
           bkgColor="pink"
           id="about"
+          title="About"
         >
           {group.node && renderRichText(group.node.body, options)}
         </SectionBand>
@@ -41,6 +42,7 @@ class RootIndex extends React.Component {
           bkgColor="brown"
           id="events"
           width="wide"
+          title="Events"
         >
           <Events />
         </SectionBand>
@@ -48,6 +50,7 @@ class RootIndex extends React.Component {
           bkgColor="green"
           id="clubs"
           width="wide"
+          title="Clubs"
         >
           <Groups />
         </SectionBand>

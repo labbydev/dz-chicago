@@ -4,7 +4,7 @@ const widths = {
   wide: `lg:max-w-screen-lg`,
 }
 
-export default ({ children, width }) => (
+const Container = ({ children, width }) => (
   <div
     className={`
       ${widths[width]}
@@ -12,3 +12,5 @@ export default ({ children, width }) => (
     `}
   >{children}</div>
 )
+
+export default Container

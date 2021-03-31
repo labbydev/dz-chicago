@@ -2,7 +2,7 @@ import React from 'react'
 import IconMenuItem from './icon-menu-item'
 import { Facebook, Instagram, Slack } from 'react-feather'
 
-export default () => (
+const SocialNav = () => (
   <nav role="navigation" aria-label="social links">
     <ul>
       <IconMenuItem
@@ -29,3 +29,5 @@ export default () => (
     </ul>
   </nav>
 )
+
+export default SocialNav

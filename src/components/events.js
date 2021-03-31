@@ -1,6 +1,5 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import Button from './button'
 
 const Events = () => {
   const data = useStaticQuery(

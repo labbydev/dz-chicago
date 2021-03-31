@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import MenuToggle from './menu-toggle'
 
-export default () => (
+const Navigation = () => (
   <MenuToggle>
     <nav 
       className={`absolute left-0 bg-pink-500 w-full p-4 z-50 shadow-md`}
@@ -36,3 +36,5 @@ export default () => (
     </nav>
   </MenuToggle>
 )
+
+export default Navigation

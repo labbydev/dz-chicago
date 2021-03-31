@@ -2,7 +2,7 @@ import React from 'react'
 import Button from './button'
 
 
-export default ({ data }) => (
+const Hero = ({ data }) => (
   <div 
     style={{ 
       backgroundImage: `url(${data.heroImage.fluid.src})` 
@@ -19,3 +19,5 @@ export default ({ data }) => (
     </div>
   </div>
 )
+
+export default Hero

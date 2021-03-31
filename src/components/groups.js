@@ -40,7 +40,7 @@ const Groups = () => {
             <div className={`mb-8 text-center grid grid-flow-row`}>
               <img 
                 src={node.image.resize.src} 
-                title={node.image.title}
+                alt={node.image.title}
                 className={`mb-8`}
               />
               <h3>{node.name}</h3>

@@ -6,7 +6,7 @@ const colors = {
 }
 
 
-export default ({ data, children, color }) => (
+const Button = ({ data, children, color }) => (
   <a 
     className={`
     ${colors[color] || colors.primary}
@@ -17,3 +17,5 @@ export default ({ data, children, color }) => (
       { children }
   </a>
 )
+
+export default Button
