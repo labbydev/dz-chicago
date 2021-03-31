@@ -5,7 +5,7 @@ import MenuToggle from './menu-toggle'
 const Navigation = () => (
   <MenuToggle>
     <nav 
-      className={`absolute left-0 bg-pink-500 w-full p-4 z-50 shadow-md`}
+      className={`absolute left-0 top-28	bg-white w-full p-4 z-50 shadow-md`}
       role="navigation"
     >
       <ul

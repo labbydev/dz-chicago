@@ -19,7 +19,7 @@ class MenuToggle extends Component {
           onClick={this.handleClick}
         >
           <span
-            className={"bg-white block absolute left-0 w-full hamburger " + (this.state.isOpen ? "is-open" : "")}
+            className={"bg-pink-600 block absolute left-0 w-full hamburger " + (this.state.isOpen ? "is-open" : "")}
           >Show Menu</span>
         </button>
         {this.state.isOpen ? menu : ""}

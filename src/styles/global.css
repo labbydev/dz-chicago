@@ -128,7 +128,7 @@
 
 .hamburger:before,
 .hamburger:after {
-  @apply bg-white h-full w-full absolute left-0 shadow-none;
+  @apply bg-pink-600 h-full w-full absolute left-0 shadow-none;
   content: '';
   transition: transform 0.3s;
 }
